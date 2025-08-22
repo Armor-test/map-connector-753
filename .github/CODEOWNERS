@@ -1,0 +1,36 @@
+# CODEOWNERS file for map-connector-753
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-identity @Armor-test/dept-data @Armor-test/grp-search
+
+# Directory ownership
+/pkg/ @Armor-test/dept-security @Armor-test/squad-search
+/styles/ @Armor-test/dept-test @Armor-test/team-frontend @Armor-test/squad-search
+/ui/ @Armor-test/squad-tooling @Armor-test/dept-security @Armor-test/unit-test
+/extensions/ @Armor-test/dept-test @Armor-test/team-core @Armor-test/grp-storage
+/vendor/ @Armor-test/grp-search @Armor-test/squad-frontend @Armor-test/team-research
+/data/ @Armor-test/dept-automation @Armor-test/team-logging
+/tools/ @Armor-test/team-reporting @Armor-test/squad-tooling @Armor-test/grp-search
+/internal/ @Armor-test/grp-payments @Armor-test/team-reporting @Armor-test/team-notifications
+/assets/ @Armor-test/grp-payments @Armor-test/dept-reporting @Armor-test/squad-ml
+/core/ @Armor-test/team-research @Armor-test/grp-storage @Armor-test/dept-api
+
+# File type ownership
+*.h @Armor-test/unit-design @Armor-test/squad-qa @Armor-test/unit-devops
+*.config @Armor-test/unit-design @Armor-test/dept-reliability @Armor-test/dept-test
+*.tsx @Armor-test/dept-identity @Armor-test/dept-billing
+*.kt @Armor-test/squad-qa @Armor-test/squad-research @Armor-test/squad-mobile
+*.tf @Armor-test/dept-security @Armor-test/squad-research @Armor-test/unit-design
+*.py @Armor-test/squad-frontend @Armor-test/grp-reporting
+*.ini @Armor-test/unit-devops @Armor-test/dept-data @Armor-test/squad-database
+*.rb @Armor-test/squad-search @Armor-test/dept-automation @Armor-test/squad-payments
+*.xml @Armor-test/dept-api @Armor-test/squad-research @Armor-test/dept-security
+*.lock @Armor-test/dept-reliability @Armor-test/squad-cloud @Armor-test/unit-design
+*.ts @Armor-test/grp-api @Armor-test/squad-cache @Armor-test/grp-search
+*.graphql @Armor-test/squad-research @Armor-test/unit-cloud @Armor-test/squad-apps
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
